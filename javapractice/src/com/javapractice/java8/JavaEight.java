@@ -36,7 +36,7 @@ public class JavaEight {
 		System.out.println("---------------------------------------------------------------------");
 
 		// Implementation of apply() method of function Functional Interface
-		Function<Integer, Integer> f = e -> e + 5;
+		Function<Integer, String> f = e -> e+"";
 		for (int i : list) {
 			System.out.println(f.apply(i));
 		}
@@ -50,7 +50,7 @@ public class JavaEight {
 		System.out.println("---------------------------------------------------------------------");
 
 		// Implementation of get() method of Supplier Functional Interface
-		Supplier<Double> s = () -> Math.random();
+		Supplier<Integer> s = () -> 10-7;
 		System.out.println(s.get());
 
 		System.out.println("---------------------------------------------------------------------");
@@ -80,6 +80,7 @@ public class JavaEight {
 //		System.out.println(sj);
       
 		Arrays.asList(z).stream().forEach(System.out::print);
+		Arrays.stream(z).forEach(System.out::print);
 	}
 
 }

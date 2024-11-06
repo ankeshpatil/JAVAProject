@@ -21,7 +21,7 @@ public class StreamAPI {
 		
 //		String z=Arrays.asList(as.split("")).stream().distinct().collect(Collectors.joining());
 //		System.out.println(z);
-		
+		Arrays.asList(as.split("")).stream().distinct().forEach(System.out::print);
 				
 				
 	List <Integer> al=new ArrayList<Integer>();
@@ -30,6 +30,7 @@ public class StreamAPI {
 		al.add(14);
 		al.add(32);
 		al.add(18);
+		
 		
 		//filter(Predicate<> pr) ==>It is used to filter the collection based on some condition..
 		
@@ -69,7 +70,7 @@ public class StreamAPI {
 //		List<Integer> list=al.stream().sorted((s1,s2)->-s1.compareTo(s2)).collect(Collectors.toList());
 //		list.forEach(System.out::println);
 		
-		//To get max/min number from list
+//		To get max/min number from list
 		
 //		int num =al.stream().max((s1,s2)->s1.compareTo(s2)).get();
 //		System.out.println("The max number is :  "+num); //32
@@ -194,6 +195,7 @@ public class StreamAPI {
 //ai.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
 //.forEach((K,V)->System.out.println(K+" : "+V));
 
+
 //Comparator <Employee>cm=(a,b)->(b.getSalary()-a.getSalary());
 //Collections.sort(list,cm);
 //list.forEach(System.out::println);
@@ -202,5 +204,7 @@ public class StreamAPI {
 //Comparator<Employee> comp=(o1,o2)->(o1.getSalary()>o2.getSalary())? -1 :(o1.getSalary()<o2.getSalary())? 1 : o2.getName().compareTo(o1.getName());
 //Collections.sort(list, comp);
 //list.forEach(System.out::println);
+ 
+ //if json object given in text file.>>you have to extract/parse the data (1,2 attribute ) from json object array
 	}
 }
